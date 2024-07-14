@@ -14,7 +14,6 @@ def setup_project():
     else:
         print("Virtual environment already exists.")
 
-    # 3. Update .pth file to include the project root dir
     pth_file = "venv/lib/python3.12/site-packages/root.pth"
     if not os.path.exists(pth_file) or open(pth_file).read().strip() != os.getcwd():
         print("Updating .pth file...")

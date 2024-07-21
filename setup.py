@@ -2,6 +2,10 @@ import os
 import subprocess
 import venv
 
+"""
+Run this script to setup the project. It will create a virtual environment, add the project path, and install the requirements if present.
+"""
+
 
 def run_command(command):
     subprocess.run(command, shell=True, check=True)

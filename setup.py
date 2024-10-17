@@ -26,9 +26,9 @@ def setup_project():
     else:
         print(".pth file already up to date.")
 
-    if os.path.exists("core/requirements.txt"):
+    if os.path.exists("requirements.txt"):
         print("Installing requirements...")
-        run_command("venv/bin/pip install -r core/requirements.txt")
+        run_command("venv/bin/pip install -r requirements.txt")
     else:
         print("No requirements.txt found in core directory")
 
